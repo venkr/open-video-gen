@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:chatgpt.com)",
+      "WebFetch(domain:x.com)",
+      "Bash(bun install:*)",
+      "Bash(bunx:*)",
+      "Bash(bun run:*)",
+      "Bash(bun remove:*)",
+      "Bash(bun add:*)",
+      "WebFetch(domain:replicate.com)",
+      "WebFetch(domain:sdk.vercel.ai)"
+    ],
+    "deny": []
+  }
+}
