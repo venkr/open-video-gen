@@ -10,6 +10,7 @@ import { getModelById, defaultModels } from '~/utils/providers';
 import { storage, storeImageFromUrl, storeAudioBlob, createBlobUrl, generateAssetId } from '~/utils/storage';
 import ModelSelector from './ModelSelector';
 import AssetGallery from './AssetGallery';
+import ApiKeysButton from './ApiKeysButton';
 
 export default function VideoGenPipeline() {
   const [script, setScript] = useState('');
@@ -285,6 +286,9 @@ export default function VideoGenPipeline() {
     <div className="max-w-4xl mx-auto">
       {/* Main Title Card */}
       <div className="mb-8">
+        <div className="flex justify-end mb-6">
+          <ApiKeysButton />
+        </div>
         <Card className="p-6 border-4 border-gray-900 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white">
           <h1 className="text-4xl font-black text-center text-gray-900 tracking-wider">
             OPENVIDEOGEN
